@@ -9,8 +9,10 @@ def citiesTimeZones():
 
 
 
-app1.add_url_rule('/favicon.ico',
-                 redirect_to=url_for('static', filename='favicon.ico'))
+@app1.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__=='__main__':
     app1.run(debug=True,host='0.0.0.0',port=int(os.environ['port']))
