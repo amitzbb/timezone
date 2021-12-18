@@ -5,4 +5,5 @@ RUN pip install -r requirements.txt
 COPY . /
 ENV port=6500
 EXPOSE $port
-CMD ["python3","app.py"]
+ENTRYPOINT [ "python3" ]
+CMD [ "app.py" ]
