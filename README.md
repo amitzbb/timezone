@@ -11,3 +11,9 @@
 helm upgrade --install  timezone -f ./timezone/values.yaml ./timezone
 ```
 
+### to delete the chart run the following command 
+
+```bash
+helm delete timezone
+```
+
