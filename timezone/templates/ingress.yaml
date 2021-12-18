@@ -10,5 +10,5 @@ spec:
     service:
       name: {{ include "timezone.fullname" . }}
       port:
-        number: 8080
+        number: {{ .Values.service.port }}
 {{- end }}
