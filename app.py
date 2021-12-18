@@ -7,6 +7,10 @@ app1 = Flask(__name__)
 def citiesTimeZones():
     return render_template("index.html")
 
+@app.route('/favicon.ico') 
+def favicon(): 
+    return render_template("favicon.ico")
+
 if __name__=='__main__':
     app1.run(debug=True,host='0.0.0.0',port=int(os.environ['port']))
 
