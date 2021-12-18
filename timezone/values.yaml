@@ -15,9 +15,8 @@ imagePullSecrets: []
 
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 8080
-  nodePort: 30200
 
 ingress:
   enabled: true
