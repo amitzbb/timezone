@@ -1,5 +1,5 @@
 
-# Skybox terrafrom exercise .
+# GKE interview docker and chart .
 ## Prerequisites :
 * docker
 * helm
