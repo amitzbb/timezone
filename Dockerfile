@@ -3,5 +3,6 @@ COPY ./requirements.txt /requirements.txt
 WORKDIR /
 RUN pip install -r requirements.txt
 COPY . /
-ENTRYPOINT [ "python3" ]
-CMD [ "app1.py" ]
+ENV port=6500
+EXPOSE $port
+CMD ["python3","app.py"]
